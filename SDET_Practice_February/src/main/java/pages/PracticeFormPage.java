@@ -21,11 +21,11 @@ public class PracticeFormPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "/html/body/div[2]/div/div/div[2]/div[2]/div[2]/form/div[1]/div[2]/input")
+    @FindBy(id = "firstName")
     private WebElement firstName;
-    @FindBy(xpath = "//input[@id='lastName']")
+    @FindBy(id="lastName")
     private WebElement lastName;
-    @FindBy(xpath = "//input[@id='userEmail']")
+    @FindBy(css = "input#userEmail")
     private WebElement email;
     @FindBy(xpath = "//*[@id='genterWrapper']/div[2]/div[1]")
     private WebElement maleGender;
